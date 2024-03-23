@@ -24,7 +24,7 @@ jobs:
         uses: aws-actions/amazon-ecr-login@v1
 
       - name: Build docker image
-        run: docker build -t app-image:v1 .
+        run: docker build -t hello-app:v1 .
 
       - name: Tag docker image
         run: docker tag hello-app:v1 740150050646.dkr.ecr.us-east-1.amazonaws.com/hello-app:v1
